@@ -1,0 +1,697 @@
+/* src/Pages/Home/Home.css */
+.home-page {
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Hero Section */
+.hero-section {
+  margin-bottom: 24px;
+}
+
+.category-menu {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 0;
+  height: 100%;
+}
+
+.category-menu-item {
+  display: block;
+  padding: 10px 16px;
+  color: var(--text-primary);
+  transition: background 0.3s;
+}
+
+.category-menu-item:hover {
+  background: var(--background-gray);
+  color: var(--primary-color);
+}
+
+.hero-banner {
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/29/18/43/music-2694489_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 360px;
+}
+
+.hero-content h2 {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.hero-image img {
+  max-width: 200px;
+}
+
+.hero-sidebar {
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+.user-card {
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  background-color: #c9daf4;
+}
+.user-info{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.promo-card {
+  padding: 16px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+}
+
+.promo-card.orange {
+  background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+}
+
+.promo-card.teal {
+  background: linear-gradient(135deg, #26c6da 0%, #00acc1 100%);
+}
+
+/* Deals Section */
+.deals-section {
+  margin-bottom: 24px;
+}
+
+.deals-info {
+  padding: 16px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.deals-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.deals-info p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.countdown-boxes {
+  display: flex;
+  gap: 6px;
+}
+
+.countdown-box {
+  background: #606060;
+  padding: 8px 8px 4px;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-value {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: 10px;
+  color: #ccc;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+.deals-products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 100%;
+  overflow: visible;
+}
+
+.deal-item {
+  text-align: center;
+  padding: 16px;
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+}
+
+.deal-image {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.deal-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.deal-item p {
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.deal-item .discount-badge {
+  position: static;
+  background: #ffebee;
+  color: #f44336;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+/* Category Sections */
+.category-section {
+  margin-bottom: 24px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.category-info {
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 240px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.category-info.home-outdoor {
+  background-image: url("https://www.marthastewart.com/thmb/RKIM183rq-Yw_KLK7_912LRdL-w=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/jefferson-street-home-tour-veranda-0120-b824802a36a547e3862348929b29fa14.jpg");
+  background-size: cover;
+  padding: none;
+  object-fit: contain;
+
+}
+
+.category-info.electronics {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/007/928/836/small_2x/online-shopping-concept-about-electronics-and-gadgets-in-modern-promotion-period-of-new-models-consist-of-phone-vr-headphone-with-drone-and-credit-card-on-green-background-realistic-3d-rendering-photo.jpg");
+  background-size: cover;
+  padding: none;
+  object-fit: contain;
+}
+
+.category-info h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: auto;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  background: #fff;
+}
+
+.category-item:nth-child(4n) {
+  border-right: none;
+}
+
+.category-item:nth-last-child(-n+4) {
+  border-bottom: none;
+}
+
+.category-item-name {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.category-item-price {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.category-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Quote Section */
+.quote-section {
+  margin-bottom: 24px;
+}
+
+.quote-banner {
+  background-image: 
+    linear-gradient(to bottom, rgba(11, 94, 215, 0.9), rgba(124, 169, 237, 0.7)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuXiKQFvjpbwoyeC4YAQyLrlEEQd97o4uVFQ&s");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  object-fit: contain;
+}
+
+.quote-info {
+  color: white;
+  max-width: 400px;
+}
+
+.quote-info h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.quote-form {
+  width: 400px;
+}
+
+/* Recommended Section */
+.recommended-section {
+  margin-bottom: 32px;
+}
+
+.recommended-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.recommended-card .ant-card-body {
+  padding: 12px;
+  height: 300px !important;
+}
+
+.recommended-image {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.recommended-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.recommended-info .price {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.recommended-info .name {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Services Section */
+.services-section {
+  margin-bottom: 32px;
+}
+
+.services-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.service-card {
+  overflow: hidden;
+}
+
+.service-card .ant-card-body {
+  padding: 0;
+}
+
+.service-image {
+  height: 150px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-card p {
+  padding: 12px;
+  font-weight: 500;
+}
+
+/* Suppliers Section */
+.suppliers-section {
+  margin-bottom: 32px;
+}
+
+.suppliers-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.supplier-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.supplier-item .flag {
+  font-size: 28px;
+}
+
+.supplier-info .country {
+  font-weight: 500;
+  margin: 0;
+}
+
+.supplier-info .domain {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Mobile Home Styles */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 12px 0;
+  }
+
+  /* Hero Section */
+  .hero-section .ant-row {
+    flex-direction: column;
+  }
+
+  .category-menu {
+    display: none;
+  }
+
+  .hero-banner {
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .hero-content h2 {
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .hero-content .ant-btn {
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .hero-sidebar {
+    display: none;
+  }
+
+  /* Deals Section */
+  .deals-section .ant-card-body {
+    padding: 12px;
+  }
+
+  .deals-section .ant-row {
+    flex-direction: column;
+  }
+
+  .deals-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 12px;
+  }
+
+  .deals-info h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .deals-info p {
+    display: none;
+  }
+
+  .countdown-boxes {
+    gap: 4px;
+  }
+
+  .countdown-box {
+    padding: 6px;
+    min-width: 32px;
+  }
+
+  .countdown-value {
+    font-size: 14px;
+  }
+
+  .countdown-label {
+    font-size: 8px;
+  }
+
+  .deals-products {
+    display: flex;
+    overflow-x: auto;
+    gap: 0;
+    grid-template-columns: none;
+    /* -webkit-overflow-scrolling: touch; */
+    /* scrollbar-width: none; */
+    padding-bottom: 8px;
+  }
+
+  .deals-products::-webkit-scrollbar {
+    display: none;
+  }
+
+  .deal-item {
+    min-width: 120px;
+    padding: 12px;
+    border-left: none;
+    border-right: 1px solid var(--border-color);
+  }
+
+  .deal-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .deal-item p {
+    font-size: 13px;
+  }
+
+  .deal-item .discount-badge {
+    font-size: 12px;
+    padding: 2px 8px;
+  }
+
+  /* Category Sections */
+  .category-section .ant-card-body {
+    padding: 0;
+  }
+
+  .category-section .ant-row {
+    flex-direction: column;
+  }
+
+  .category-info {
+    min-height: 120px;
+    padding: 16px;
+  }
+
+  .category-info h3 {
+    font-size: 16px;
+  }
+
+  .category-grid {
+    display: flex;
+    overflow-x: auto;
+    grid-template-columns: none;
+    /* -webkit-overflow-scrolling: touch; */
+    /* scrollbar-width: none; */
+  }
+
+  .category-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-item {
+    min-width: 140px;
+    flex-direction: column;
+    padding: 12px;
+    border-bottom: none;
+    border-right: 1px solid var(--border-color);
+    text-align: center;
+  }
+
+  .category-item-info {
+    margin-bottom: 8px;
+  }
+
+  .category-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .source-link {
+    display: block;
+    padding: 12px 16px;
+    color: var(--primary-color);
+    font-weight: 500;
+    border-top: 1px solid var(--border-color);
+  }
+
+  /* Quote Section */
+  .quote-banner {
+    flex-direction: column;
+    padding: 24px 16px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .quote-info {
+    max-width: 100%;
+  }
+
+  .quote-info h2 {
+    font-size: 20px;
+  }
+
+  .quote-form {
+    width: 100%;
+  }
+
+  /* Recommended Section */
+  .recommended-section {
+    margin-bottom: 20px;
+  }
+
+  .recommended-section h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .recommended-section .ant-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* -webkit-overflow-scrolling: touch; */
+    /* scrollbar-width: none; */
+    gap: 12px;
+    margin: 0 !important;
+  }
+
+  .recommended-section .ant-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .recommended-section .ant-col {
+    flex: 0 0 auto;
+    width: 160px !important;
+    max-width: 160px !important;
+    padding: 0 !important;
+  }
+
+  .recommended-card .ant-card-body {
+    height: auto !important;
+    padding: 8px;
+  }
+
+  .recommended-image {
+    height: 140px;
+    margin-bottom: 8px;
+  }
+
+  .recommended-info .price {
+    font-size: 14px;
+  }
+
+  .recommended-info .name {
+    font-size: 12px;
+    /* -webkit-line-clamp: 2; */
+  }
+
+  /* Services & Suppliers */
+  .services-section,
+  .suppliers-section {
+    margin-bottom: 20px;
+  }
+
+  .services-section h2,
+  .suppliers-section h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    min-height: 160px;
+    padding: 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 18px;
+  }
+}

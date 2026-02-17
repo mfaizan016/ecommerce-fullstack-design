@@ -1,0 +1,26 @@
+.custom-breadcrumb {
+  padding: 12px 0;
+}
+
+.custom-breadcrumb a {
+  color: var(--text-secondary);
+}
+
+.custom-breadcrumb a:hover {
+  color: var(--primary-color);
+}
+
+/* Mobile Breadcrumb Styles */
+@media (max-width: 768px) {
+  .custom-breadcrumb {
+    padding: 8px 12px;
+    font-size: 12px;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* -webkit-overflow-scrolling: touch; */
+  }
+
+  .custom-breadcrumb::-webkit-scrollbar {
+    display: none;
+  }
+}

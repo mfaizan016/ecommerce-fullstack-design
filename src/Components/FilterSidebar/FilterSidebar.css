@@ -1,0 +1,100 @@
+/* src/Components/FilterSidebar/FilterSidebar.css */
+.filter-sidebar {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 8px;
+  width: 240px;
+}
+
+.filter-sidebar .ant-collapse-header {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.filter-sidebar .ant-collapse-content-box {
+  padding: 0 16px 16px !important;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  padding: 8px 0;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.category-list li:hover {
+  color: var(--primary-color);
+}
+
+.see-all {
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 14px;
+  display: block;
+  margin-top: 8px;
+}
+
+.filter-checkbox-group,
+.filter-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.price-inputs {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.price-inputs .ant-input-affix-wrapper {
+  width: 50%;
+}
+
+.apply-btn {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.rating-stars {
+  color: var(--warning-color);
+}
+
+/* Mobile Filter Sidebar */
+@media (max-width: 768px) {
+  .filter-sidebar {
+    display: none;
+  }
+
+  /* Mobile filter modal/drawer would go here */
+  .filter-sidebar.mobile-open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    overflow-y: auto;
+    animation: slideUp 0.3s ease;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+}

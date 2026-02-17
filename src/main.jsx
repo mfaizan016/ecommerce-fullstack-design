@@ -1,10 +1,24 @@
+// src/main.jsx
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import { BrowserRouter } from 'react-router-dom'
+import { ConfigProvider } from 'antd'
 import App from './App.jsx'
+import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: '#0D6EFD',
+          borderRadius: 6,
+        },
+      }}
+    >
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ConfigProvider>
   </StrictMode>,
 )

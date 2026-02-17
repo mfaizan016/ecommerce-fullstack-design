@@ -1,0 +1,150 @@
+/* src/Components/Header/Header.css */
+.header {
+  background: #fff;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.search-container {
+  flex: 1;
+  max-width: 600px;
+}
+
+.search-container .ant-input-group-wrapper {
+  width: 100%;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-items: flex-end;
+  margin-left: 155px;
+}
+
+.header-action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.header-action-item:hover {
+  color: var(--primary-color);
+}
+
+.action-icon {
+  font-size: 24px;
+}
+
+.action-text {
+  font-size: 12px;
+}
+
+/* Mobile Header Styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .header-actions {
+    order: 2;
+    margin-left: auto;
+    gap: 16px;
+  }
+
+  .header-actions .action-text {
+    display: none;
+  }
+
+  .header-actions .action-icon {
+    font-size: 22px;
+  }
+
+  .search-container {
+    order: 3;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .search-container .ant-select {
+    display: none !important;
+  }
+
+  .search-container .ant-input-group-addon:first-child {
+    display: none;
+  }
+
+  .search-container .ant-input-search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-container .ant-btn span:not(.anticon) {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-actions {
+    gap: 12px;
+  }
+
+  .header-actions .action-icon {
+    font-size: 20px;
+  }
+}

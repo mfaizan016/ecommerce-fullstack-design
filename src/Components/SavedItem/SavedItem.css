@@ -1,0 +1,90 @@
+/* src/Components/SavedItem/SavedItem.css */
+.saved-item {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.saved-item .ant-card-body {
+  padding: 16px;
+}
+
+.saved-item-image {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.saved-item-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.saved-item-info {
+  margin-bottom: 12px;
+}
+
+.saved-item-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.saved-item-name {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 4px 0 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.move-to-cart-btn {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Mobile SavedItem Styles */
+@media (max-width: 768px) {
+  .saved-item {
+    min-width: 180px;
+  }
+
+  .saved-item .ant-card-body {
+    padding: 12px;
+  }
+
+  .saved-item-image {
+    height: 140px;
+    margin-bottom: 8px;
+  }
+
+  .saved-item-price {
+    font-size: 14px;
+  }
+
+  .saved-item-name {
+    font-size: 12px;
+    /* -webkit-line-clamp: 2; */
+  }
+
+  .saved-item-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .saved-item-actions .ant-btn {
+    flex: 1;
+    font-size: 12px;
+    padding: 4px 8px;
+    height: auto;
+  }
+}
